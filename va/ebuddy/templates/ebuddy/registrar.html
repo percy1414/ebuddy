@@ -1,0 +1,110 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-BUDDY</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+       
+</head>
+<style>
+  body {
+  background-image: url("{% static 'background1.jpg' %}");
+  background-size: cover; /* Ensures the image covers the entire background */
+  background-repeat: no-repeat; /* Prevents tiling */
+  background-attachment: fixed; /* Makes the background fixed as you scroll */
+  background-position: center; /* Centers the image */
+}
+div.content1 {
+    margin-left: 300px;
+    padding: 1px 16px;
+    height: 1000px;
+    position: fixed;
+    top: 75px;
+    left: 42px;
+    
+  }
+</style>
+<body>
+<div class="topnav">
+     
+  <img src="{% static 'evsulogo.png' %}" width="250" height="70">
+  <nav> 
+    <div class="nav-right">  
+      <a>E-BUDDY</a>
+            <img src="{% static 'robots.jpg' %}" width="90" height="70">
+    </div> 
+    </nav>
+    <!-- <a>E-BUDDY</a>
+      <img src="{% static 'robot.jpg' %}" width="70" height="70">-->
+      
+    <!--<nav>
+        
+    
+        <div class="nav-right">
+           <button class="btn login" >Login</button>
+            <button class="btn signup">Sign Up</button>
+            
+        </div>
+     </nav>-->
+        
+</div>
+
+    <!-- The sidebar -->
+<div class="sidebar">
+    <a  href="homepage">Home</a>
+    <div class="dropdown">
+      <button class="dropdown-btn">Office Chatbot</button>
+      <div class="dropdown-content">
+          <a href="saso">SASO</a>
+          <a href="registrar">REGISTRAR</a>
+          <a href="cashier">CASHIER</a>
+      </div>
+  </div>
+    <a href="">About</a>
+   <!--  <div class="dropdown">
+        <button class="dropdown-btn">Bot Language</button>
+            <div class="dropdown-content">
+                <a href="registrar">English</a>
+                <a href="tagregistrar">Filipino</a>
+            </div>
+        </div> -->
+        </div>
+    </div>
+  </div>
+
+  
+  
+  <!-- Page content -->
+<!-- <div class="content">
+    <iframe
+    allow="microphone;"
+    width="350"
+    height="575"
+    src="https://console.dialogflow.com/api-client/demo/embedded/8f4b925d-413c-4caa-aed1-a4f6f124dc19">
+</iframe>
+      
+  </div>--> 
+
+  <div class="content1">
+    <!--<img src="{% static 'REGISTRAR LOGO.jpg' %}"  width="650" height="600">-->
+    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FEVSURegistrarsOffice&tabs=timeline&width=500&height=600&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="500" height="600" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+  </div>
+
+<!-- Start of ChatBot (www.chatbot.com) code -->
+<script>
+  window.__ow = window.__ow || {};
+  window.__ow.organizationId = "b49416a6-7034-4ab4-92bc-0c2657eb15ee";
+  window.__ow.template_id = "5ac2e168-bfd1-4509-85ea-3288f4b41624";
+  window.__ow.integration_name = "manual_settings";
+  window.__ow.product_name = "chatbot";   
+  ;(function(n,t,c){function i(n){return e._h?e._h.apply(null,n):e._q.push(n)}var e={_q:[],_h:null,_v:"2.0",on:function(){i(["on",c.call(arguments)])},once:function(){i(["once",c.call(arguments)])},off:function(){i(["off",c.call(arguments)])},get:function(){if(!e._h)throw new Error("[OpenWidget] You can't use getters before load.");return i(["get",c.call(arguments)])},call:function(){i(["call",c.call(arguments)])},init:function(){var n=t.createElement("script");n.async=!0,n.type="text/javascript",n.src="https://cdn.openwidget.com/openwidget.js",t.head.appendChild(n)}};!n.__ow.asyncInit&&e.init(),n.OpenWidget=n.OpenWidget||e}(window,document,[].slice))
+</script>
+<noscript>You need to <a href="https://www.chatbot.com/help/chat-widget/enable-javascript-in-your-browser/" rel="noopener nofollow">enable JavaScript</a> in order to use the AI chatbot tool powered by <a href="https://www.chatbot.com/" rel="noopener nofollow" target="_blank">ChatBot</a></noscript>
+<!-- End of ChatBot code -->  
+
+</body>
+</html>
+
+

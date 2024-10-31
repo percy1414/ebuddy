@@ -1,0 +1,248 @@
+/* Add a background color to the top navigation */
+.topnav {
+    background-color: #cf2e2e;
+    overflow: hidden;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    display: flex;
+   
+    
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    font-size: 3em;
+            color: white;
+            animation: fadeIn 2s ease-in-out;
+            padding: 10px  12px;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #cf2e2e;
+    color: white;
+  }
+    /* The side navigation menu */
+  .sidebar {
+    margin: 0;
+    padding: 0;
+    width: 250px;
+    background-color: #cf2e2e;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    top: 70px;
+  }
+  
+  /* Sidebar links */
+  .sidebar a {
+    display: block;
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+    font-size: x-large ;
+  }
+  
+  
+  
+  /* Links on mouse-over */
+  .sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+  
+  /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+  div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+    position: fixed;
+    top: 69px;
+    left: 42px;
+    
+    
+    
+    
+  }
+  
+  /* On screens that are less than 700px wide, make the sidebar into a topbar */
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
+  
+  nav {
+      display: flex;
+      justify-content: center;
+      position: relative;
+      width: 700px;
+      box-sizing: border-box;
+      align-items: center;
+      left: 120px;
+      
+  }
+  
+  .nav-right {
+      display: flex;
+      gap: 10px;
+      
+      
+  }
+  
+  .btn {
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      
+  }
+  
+  .login {
+      background-color: #007bff;
+      color: white;
+      
+  }
+  
+  .signup {
+      background-color: #28a745;
+      color: white;
+  }
+  
+  .btn:hover {
+      opacity: 0.8;
+  }
+  
+  /* Dropdown container */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown button */
+  .dropdown-btn {
+    background-color:  #28a745;
+    color: white;
+    padding: 14px 16px;
+    font-size: x-large;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  
+   /* Base styling for images */
+   .content0 {
+          position: absolute;
+          display: flex;
+          gap: 35px;
+          justify-content: center;
+          align-items: center;
+          top: 50%;
+          left: 60%;
+          transform: translate(-50%, -50%);
+      }
+  
+      /* Style each animated choice container */
+      .choice {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 200px;
+          overflow: hidden;
+          border-radius: 15px;
+          transition: transform 0.3s ease;
+          cursor: pointer;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+          text-align: center;
+      }
+  
+      /* Scale and bounce animation on hover */
+      .choice:hover {
+          transform: scale(1.1);
+          animation: bounce 0.5s alternate infinite;
+      }
+  
+      /* Image styling */
+      .choice img {
+          width: 100%;
+          height: 200px;
+          object-fit: cover;
+          border-radius: 15px 15px 0 0;
+      }
+  
+      /* Bottom text styling */
+      .choice span {
+          width: 100%;
+          background-color: #cf2e2e;
+          color: white;
+          font-size: 1.2em;
+          padding: 10px 0;
+          border-radius: 0 0 15px 15px;
+      }
+  
+      /* Keyframes for bounce animation */
+      @keyframes bounce {
+          0% { transform: translateY(0); }
+          100% { transform: translateY(-10px); }
+      }
+  
+  
+  
